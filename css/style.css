@@ -23,7 +23,7 @@ header {
 main {
   height: 800px;
 }
-.divmain {
+.container {
   padding-top: 40px;
   padding-bottom: 40px;
   background: white;
@@ -35,7 +35,7 @@ main {
   height: 800px;
 }
 
-.sobremim {
+.card {
   border: solid black 1px;
   height: auto;
   width: 40%;
@@ -44,18 +44,18 @@ main {
   border-radius: 5px;
 }
 
-.sobremim h2 {
+.card h2 {
   padding: 10px;
   text-align: center;
   color: orange;
   font-weight: bold;
 }
 
-.sobremim p {
+.card p {
   margin: 10px;
 }
 
-.objetivo {
+.card {
   border: solid black 1px;
   height: auto;
   width: 40%;
@@ -64,14 +64,14 @@ main {
   border-radius: 5px;
 }
 
-.objetivo h2 {
+.card h2 {
   padding: 10px;
   text-align: center;
   color: orange;
   font-weight: bold;
 }
 
-.objetivo p {
+.card p {
   margin: 10px;
 }
 
@@ -81,22 +81,7 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-.divfooter {
-  display: flex;
-  flex-direction: row;
-}
-
-.direitos {
-  font-size: smaller;
-  flex-wrap: nowrap;
-  color: white;
-  margin-left: 5%;
-  width: 80%;
-}
-
-.divfooter1 {
-  font-size: smaller;
-  color: white;
-  justify-content: flex-end;
+  font-size: smaller; 
+  text-align: center;
+  color: white;  
 }
