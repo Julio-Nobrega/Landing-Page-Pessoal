@@ -54,17 +54,6 @@ main {
   margin: 10px;
 }
 
-.card h2 {
-  padding: 10px;
-  text-align: center;
-  color: orange;
-  font-weight: bold;
-}
-
-.card p {
-  margin: 10px;
-}
-
 footer {
   border-top: solid 5px orange;
   background: rgb(9, 9, 128);

@@ -1,13 +1,13 @@
 # Landing Page Pessoal
 
-Projeto desenvolvido durante a Aula 1 da mentoria.
+Projeto desenvolvido para treinamento de habilidades.
 
-## 📌 Sobre o projeto
+# Sobre o projeto
 Esta é uma landing page pessoal criada com foco em estrutura HTML e estilização com CSS.
 
-## 🚀 Tecnologias utilizadas
+# Tecnologias utilizadas
 - HTML5
 - CSS3
 
-## ✍️ Autor
+# Autor
 Julio Nobrega
