@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+}
+
+header {
+  background: rgb(9, 9, 128);
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-weight: 900;
+}
+
+main {
+  height: 800px;
+}
+.divmain {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: white;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #cccc;
+  height: 800px;
+}
+
+.sobremim {
+  border: solid black 1px;
+  height: auto;
+  width: 40%;
+  margin-left: 5%;
+  background: white;
+  border-radius: 5px;
+}
+
+.sobremim h2 {
+  padding: 10px;
+  text-align: center;
+  color: orange;
+  font-weight: bold;
+}
+
+.sobremim p {
+  margin: 10px;
+}
+
+.objetivo {
+  border: solid black 1px;
+  height: auto;
+  width: 40%;
+  margin-right: 5%;
+  background: white;
+  border-radius: 5px;
+}
+
+.objetivo h2 {
+  padding: 10px;
+  text-align: center;
+  color: orange;
+  font-weight: bold;
+}
+
+.objetivo p {
+  margin: 10px;
+}
+
+footer {
+  border-top: solid 5px orange;
+  background: rgb(9, 9, 128);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.divfooter {
+  display: flex;
+  flex-direction: row;
+}
+
+.direitos {
+  font-size: smaller;
+  flex-wrap: nowrap;
+  color: white;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.divfooter1 {
+  font-size: smaller;
+  color: white;
+  justify-content: flex-end;
+}
