@@ -22,7 +22,7 @@ header {
 }
 
 main {
-  height: 800px;
+  height: 1500px;
 }
 .container {
   padding: 40px;
@@ -31,21 +31,21 @@ main {
   flex-direction: row;
   justify-content: center;
   gap: 40px;
-  
 }
 
-.card, .cardaula4 {
+.card,
+.cardaula4 {
   border: solid black 1px;
   height: auto;
   width: 100%;
   max-width: 400px;
   background: white;
   border-radius: 5px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .card h2 {
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   color: orange;
   font-weight: bold;
@@ -55,7 +55,7 @@ main {
   margin: 10px;
 }
 
-.ativo{
+.ativo {
   background: rgb(189, 246, 250);
 }
 
@@ -70,16 +70,91 @@ main {
   margin: 10px;
 }
 
-.dentro{
-  background: rgb(134, 134, 241);
+/*AULA 5*/
+.containercard {
+  display: flex;
+  justify-content: center;
 }
 
-.fora{
-  background: whitesmoke;
+#criarCard {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  width: 300px;
+  background: rgb(109, 190, 245);
 }
 
-.clicado{
-  background: rgb(250, 95, 95);
+#criarCard:hover {
+  background: linear-gradient(to left, rgb(109, 190, 245), rgb(180, 222, 250));
+  font-size: larger;
+}
+
+.containerAula5 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardNovo {
+  padding: 15px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.cliquecard {
+  background-color: rgb(181, 250, 233);
+}
+
+.escondido {
+  display: none;
+  width: auto;
+}
+
+.containermenu {
+  display: flex;
+  gap: 20px;
+}
+
+.menuitem {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleaula {
+  display: flex;
+  padding: 20px;
+  color: orange;
+  font-weight: bold;
+  width: 100%;
+  justify-content: center;
+}
+
+#btnFrutas,
+#btnVerduras,
+#btnCarnes,
+#btnMolhos {
+  padding: 5px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  max-height: 80px;
+  margin-left: 20px;
+}
+
+#listaFrutas,
+#listaCarnes,
+#listaVerduras,
+#listaMolhos {
+  margin-top: 10px;
+  padding: 10px;
+  height: 200px;
+  margin-left: 20px;
 }
 
 footer {
@@ -87,12 +162,13 @@ footer {
   background: rgb(9, 9, 128);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
-  font-size: smaller; 
+  font-size: smaller;
   text-align: center;
-  color: white;  
+  color: white;
+  margin-bottom: 0px;
 }
-@media (max-width: 768px){
-  .container{
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
     align-items: center;
   }

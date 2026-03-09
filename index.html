@@ -1,68 +1,173 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AQUI ESTA O CONTEÚDO DOS MEUS ESTUDOS!" />
-    <meta name="keywords" content="Landing Page Pessoal" />
-    <meta name="author" content="Julio Nobrega" />
-    <title>Minha Landing Page</title>
-    <link rel="icon" type="image/png" href="./img/icon.png" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AQUI ESTA O CONTEÚDO DOS MEUS ESTUDOS!">
+  <meta name="keywords" content="Landing Page Pessoal">
+  <meta name="author" content="Julio Nobrega">
 
-  <body>
-    <header>
-      <h1>Júlio Nobrega</h1>
-    </header>
+  <title>Minha Landing Page</title>
 
-    <main>
-      <div class="container">
-        <section class="card" onclick="mudarCor(this)">
-          <h2>SOBRE MIM</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-            expedita assumenda incidunt aperiam voluptate deserunt, obcaecati
-            fugit sit vitae, provident distinctio perferendis! Distinctio minima
-            natus quis eius, dignissimos aspernatur ullam?
-          </p>
-        </section>
-        <section class="card" onclick="mudarCor(this)">
-          <h2>OBJETIVO</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            ipsum quasi voluptatum recusandae ullam dignissimos magnam
-            repudiandae rerum in, voluptatibus error aspernatur. Magnam eveniet
-            nisi ut voluptas architecto vel eius.
-          </p>
-        </section>
+  <link rel="icon" type="image/png" href="./img/icon.png">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Júlio Nobrega</h1>
+</header>
+
+<main>
+
+  <!-- SOBRE MIM / OBJETIVO -->
+  <div class="container">
+
+    <section class="card" onclick="mudarCor(this)">
+      <h2>SOBRE MIM</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+        expedita assumenda incidunt aperiam voluptate deserunt, obcaecati
+        fugit sit vitae, provident distinctio perferendis! Distinctio minima
+        natus quis eius, dignissimos aspernatur ullam?
+      </p>
+    </section>
+
+    <section class="card" onclick="mudarCor(this)">
+      <h2>OBJETIVO</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+        ipsum quasi voluptatum recusandae ullam dignissimos magnam
+        repudiandae rerum in, voluptatibus error aspernatur. Magnam eveniet
+        nisi ut voluptas architecto vel eius.
+      </p>
+    </section>
+
+  </div>
+
+  <!-- AULA 4 -->
+  <div class="container">
+
+    <section class="cardaula4" onclick="mudarCor4(this)">
+      <h2>Aula 4</h2>
+
+      <p>
+        🚀 Exercício da Aula 4
+        <br><br>
+
+        Faça um card que:
+        <br><br>
+
+        🔵 Fica azul quando o mouse entra
+        <br>
+
+        ⚪ Volta branco quando sai
+        <br>
+
+        🔴 Fica vermelho quando clicar
+        <br><br>
+
+        Sem usar onclick no HTML.
+      </p>
+
+    </section>
+
+  </div>
+
+  <!-- AULA 5 -->
+  <div class="containercard">
+
+    <section>
+
+      <button id="criarCard">Criar Card AULA 5</button>
+
+      <div class="containerAula5"></div>
+
+    </section>
+
+  </div>
+
+  <!-- AULA 6 -->
+    <section>
+
+    <h2 class="titleaula">Aula 6</h2>
+
+    <div class="containermenu">
+
+      <div class="menuitem">
+
+        <button id="btnFrutas">Frutas</button>
+
+        <div id="listaFrutas" class="escondido">
+          <p>Maçã</p>
+          <p>Banana</p>
+          <p>Uva</p>
+        </div>
+
       </div>
-      <div class="container">
-        <section class="cardaula4" onclick="mudarCor4(this)">
-          <h2>Aula 4</h2>
-          <p>
-            🚀 Exercício da Aula 4
-            <br />
 
-            Faça um card que:
-            <br />
+      <div class="menuitem">
 
-            🔵 Fica azul quando o mouse entra
-            <br />
+        <button id="btnVerduras">Verduras</button>
 
-            ⚪ Volta branco quando sai
-            <br />
-            🔴 Fica vermelho quando clicar
-            <br />
-            Sem usar onclick no HTML.
-          </p>
-        </section>
+        <div id="listaVerduras" class="escondido">
+          <p>Alface</p>
+          <p>Couve</p>
+          <p>Brocolis</p>
+        </div>
+
       </div>
-    </main>
 
-    <footer>2026 - Todos os direitos reservados©</footer>
+    </div>
 
-    <script src="./js/script.js"></script>
-  </body>
+  </section>
+
+
+
+  <!-- AULA 7 -->
+     <section>
+
+    <h2 class="titleaula">Aula 7</h2>
+
+    <div class="containermenu">
+
+      <div class="menuitem">
+
+        <button id="btnCarnes">Carnes</button>
+
+        <div id="listaCarnes" class="escondido">
+          <p>Bovino</p>
+          <p>Suíno</p>
+          <p>Frango</p>
+        </div>
+
+      </div>
+
+      <div class="menuitem">
+
+        <button id="btnMolhos">Molhos</button>
+
+        <div id="listaMolhos" class="escondido">
+          <p>Bolonhesa</p>
+          <p>Branco</p>
+          <p>Pesto</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+ 
+</main>
+
+<footer>
+  2026 - Todos os direitos reservados©
+</footer>
+
+<script src="./js/script.js"></script>
+
+</body>
 </html>
