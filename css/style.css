@@ -157,6 +157,20 @@ main {
   margin-left: 20px;
 }
 
+.aula8{
+  margin-top:40px;
+  text-align:center;
+}
+
+#resultadoGit{
+  margin-top:20px;
+}
+
+#resultadoGit img{
+  width:120px;
+  border-radius:50%;
+}
+
 footer {
   border-top: solid 5px orange;
   background: rgb(9, 9, 128);
