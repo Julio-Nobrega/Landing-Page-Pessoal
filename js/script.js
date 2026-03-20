@@ -340,6 +340,7 @@ cepInput.addEventListener("input", function () {
 //FIM
 
 
+/*
 //aula 15 - retorno dos dados dentro do campo input usando as constantes e não inner html
 const cepInput = document.getElementById("cepInput");
 const mensagemCep = document.getElementById("mensagemCep");
@@ -359,6 +360,60 @@ cepInput.addEventListener("input", function () {
   if (cep.length !== 8) {
     return;
   }
+
+  // mensagem de carregamento
+  mensagemCep.innerHTML = "Buscando endereço...";
+
+  fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    .then(function (resposta) {
+      return resposta.json();
+    })
+
+    .then(function (dados) {
+      // caso não localize retorne a msg
+      if (dados.erro) {
+        resultadoCep.innerHTML = "CEP não encontrado.";
+        return;
+      }
+      // retorna os valores dentro das contantes
+      rua.value = dados.logradouro;
+      bairro.value = dados.bairro;
+      cidade.value = dados.localidade;      
+      estado.value = dados.uf;
+
+      mensagemCep.innerHTML = "Endereço encontrado";
+    });
+});*/
+
+//FIM
+
+
+//aula 16
+const cepInput = document.getElementById("cepInput");
+const mensagemCep = document.getElementById("mensagemCep");
+
+const rua = document.getElementById("rua");
+const bairro = document.getElementById("bairro");
+const cidade = document.getElementById("cidade");
+const estado = document.getElementById("estado");
+
+//adiciona o evento "input"
+cepInput.addEventListener("input", function () {
+  // pega o valor do que foi digitado
+  let cep = cepInput.value;
+
+  // remove tudo que não for número
+  cep = cep.replace(/\D/g, "");
+
+  //aplica a máscara
+ if (cep.length > 5) {
+   //slice(inicio, fim) corta a string nos pontos determinados (parte 1 (0,5) + inserção de string complementar ("-") parte 2 (5,8)")
+  cep = cep.slice(0,5) + "-" + cep.slice(5,8); 
+  cepInput.value = cep;
+ }
+
+ if (cep.length !==9) {
+  return;}
 
   // mensagem de carregamento
   mensagemCep.innerHTML = "Buscando endereço...";
